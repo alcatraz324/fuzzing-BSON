@@ -1,0 +1,22 @@
+<!-- harness/Harness.csproj -->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>Harness</AssemblyName>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Целевая библиотека для фаззинга -->
+    <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.3" />
+    <!--
+      ВАЖНО: версия runtime-библиотеки SharpFuzz должна совпадать с версией
+      CLI-инструмента (SharpFuzz.CommandLine), установленного через install_tools.sh.
+      CLI 2.3.0 и runtime 2.3.0 используют одинаковый формат shared memory для AFL++.
+    -->
+    <PackageReference Include="SharpFuzz" Version="2.3.0" />
+  </ItemGroup>
+
+</Project>

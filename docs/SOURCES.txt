@@ -1,0 +1,19 @@
+# docs/SOURCES.txt
+# Технический паспорт проекта
+
+## Целевая библиотека
+- Название: Newtonsoft.Json.Bson
+- Версия: 1.0.3
+- Репозиторий: https://github.com/JamesNK/Newtonsoft.Json.Bson
+
+## Архитектура целевого кода
+- BsonDataReader: компонент для парсинга бинарного формата BSON в объекты .NET (десериализация).
+- BsonDataWriter: компонент для сериализации объектов .NET в бинарный формат BSON.
+
+## Используемые инструменты и версии
+- AFL++: 5.02c (пакет afl++ из репозитория Kali Linux)
+- SharpFuzz: 2.3.0 (NuGet: SharpFuzz + SharpFuzz.CommandLine, версии должны совпадать)
+- .NET SDK: 8.0.425
+- coverlet: 10.x (NuGet: coverlet.console)
+- reportgenerator: 5.x (NuGet: dotnet-reportgenerator-globaltool)
+- Python: 3.11+

@@ -1,0 +1,13 @@
+build/
+results/
+tools/
+*.dll
+*.pdb
+*.exe
+*.o
+*.a
+*.so
+crash_analysis_report/
+*.log
+__pycache__/
+.DS_Store
